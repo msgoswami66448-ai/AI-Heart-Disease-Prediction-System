@@ -1,0 +1,29 @@
+/* ==========================================================
+   AI Heart Disease Prediction System
+   Professional CSS Version 3.0
+========================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global Font */
+html,
+body,
+[class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main App Background */
+.stApp{
+    background-color:#0E1117;
+}
+
+/* Headings */
+h1,h2,h3{
+    font-weight:700;
+}
+
+/* Divider */
+hr{
+    border:1px solid rgba(255,255,255,0.10);
+}
