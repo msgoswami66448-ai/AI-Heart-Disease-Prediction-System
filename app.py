@@ -467,11 +467,13 @@ with right_column:
 # Smart Recommendation
 # ---------------------------------------
 
-st.subheader("💊 Personalized Recommendation")
+if predict_button:
 
-if risk_score < 30:
+    st.subheader("💊 Personalized Recommendation")
 
-    st.success("""
+    if risk_score < 30:
+
+        st.success("""
 ### ✅ Low Risk
 
 • Continue a healthy lifestyle.
@@ -487,9 +489,9 @@ if risk_score < 30:
 • Maintain healthy body weight.
 """)
 
-elif risk_score < 70:
+    elif risk_score < 70:
 
-    st.warning("""
+        st.warning("""
 ### ⚠️ Moderate Risk
 
 • Monitor Blood Pressure regularly.
@@ -505,9 +507,9 @@ elif risk_score < 70:
 • Schedule regular cardiac screening.
 """)
 
-else:
+    else:
 
-    st.error("""
+        st.error("""
 ### 🚨 High Risk
 
 • Consult a Cardiologist immediately.
